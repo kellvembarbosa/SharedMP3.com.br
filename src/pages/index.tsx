@@ -52,7 +52,7 @@ export default function Home() {
   return (
     <Main >
       <Seo title="Baixar Músicas Grátis - Shared MP3" />
-      <Box position="absolute" top="25%" marginBottom={16} width="100%" flexDirection="column" textAlign="center">
+      <Box position="absolute" top="25%" width="100%" flexDirection="column" textAlign="center">
         <ScaleFade initialScale={0.9} in={isOpen}>
           <Box width={["90%", "70%", "60%", "50%"]} margin="0 auto">
 
