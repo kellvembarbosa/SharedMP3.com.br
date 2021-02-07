@@ -53,7 +53,7 @@ export default function Home() {
     <Main >
       <Seo title="Baixar Músicas Grátis - Shared MP3" />
       <Box position="absolute" top="25%" width="100%" flexDirection="column" textAlign="center">
-        <ScaleFade initialScale={0.9} in={isOpen}>
+        <Fade in={isOpen}>
           <Box width={["90%", "70%", "60%", "50%"]} margin="0 auto">
 
             <Image
@@ -80,7 +80,7 @@ export default function Home() {
               </Box>
             </Fade>
           </Box>
-        </ScaleFade>
+        </Fade>
       </Box>
 
     </Main>
