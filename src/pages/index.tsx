@@ -1,11 +1,13 @@
 import { Search2Icon } from '@chakra-ui/icons'
-import { Box, Button, Fade, Flex, Input, ScaleFade } from '@chakra-ui/react'
+import { Box, Button, Code, Fade, Flex, Input, ScaleFade } from '@chakra-ui/react'
 import Head from 'next/head'
 import Image from 'next/image'
 import React from 'react'
-import { isError } from 'util'
 import Main from '../components/Layout/Main'
 import Seo from '../components/Layout/Seo'
+import parser from 'iptv-playlist-parser'
+import axios from 'axios'
+
 
 export default function Home() {
   <style jsx global>
@@ -26,10 +28,21 @@ export default function Home() {
     setOpen(true);
   })
 
+  const handleKeyPress = (event) => {
+    if (event.key === 'Enter') {
+      handlerSearchBtn();
+    }
+  }
 
-  const handlerSearchBtn = () => {
+
+  const handlerSearchBtn = async () => {
 
     if (inputSearchValue.length <= 0) {
+
+      const playlist = await axios.get('http://aaii.tv/Jy4n0tb')
+
+      const result = parser.parse(playlist.data)
+      console.log(result)
       showError('O campo de pesquisa não pode ficar em branco!');
       return;
     }
@@ -64,8 +77,7 @@ export default function Home() {
               height={160} />
 
             <Flex flexDirection="row" mt={8}>
-
-              <Input value={inputSearchValue} onChange={(e) => setInputSearchValue(e.target.value)} placeholder="Pesquise uma música" flex="1" size="lg" marginRight={4} disabled={loading} />
+              <Input value={inputSearchValue} onChange={(e) => setInputSearchValue(e.target.value)} onKeyPress={handleKeyPress} placeholder="Pesquise uma música" flex="1" size="lg" marginRight={4} disabled={loading} />
               <Button colorScheme="blue" size="lg" pl={6} pr={6} isLoading={loading} onClick={() => handlerSearchBtn()}> <Search2Icon /> </Button>
             </Flex>
             <Fade in={error}>

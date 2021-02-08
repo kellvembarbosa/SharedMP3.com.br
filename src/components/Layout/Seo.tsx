@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import React from 'react'
 
 interface SeoProps {
@@ -10,7 +11,7 @@ function Seo({ title, description, isSufix = true }: SeoProps) {
 
     const titleSeo = isSufix ? title : `${title} | Baixar músicas grátis e YouTube Downloader`;
     return (
-        <>
+        <Head>
             <head>
                 <title>{titleSeo}</title>
                 <link rel="shortcut icon" href="/favicon.ico" />
@@ -25,14 +26,14 @@ function Seo({ title, description, isSufix = true }: SeoProps) {
                 <meta name="twitter:description" content={description} />
                 <meta name="twitter:site" content={process.env.NEXT_PUBLIC_URL} />
                 <meta name="twitter:creator" content="KNK Solutions" />
-                <link rel="icon" type="image/png" href="/static/images/favicon.ico" />
-                <link rel="apple-touch-icon" href="/static/images/favicon.ico" />
+                <link rel="icon" type="image/png" href="/favicon.ico" />
+                <link rel="apple-touch-icon" href="/favicon.ico" />
                 <link rel="stylesheet" href="" />
                 <meta property="og:image" content="" />
                 <meta name="twitter:image" content="" />
                 <link rel="canonical" href={process.env.NEXT_PUBLIC_URL} />
             </head>
-        </>
+        </Head>
     )
 }
 

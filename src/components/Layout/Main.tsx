@@ -5,7 +5,7 @@ import Header from './Header'
 
 function Main({ children }) {
     return (
-        <Flex flexDirection="column" a minHeight="100vh">
+        <Flex flexDirection="column" minHeight="100vh">
             <Header />
             {children}
             <Footer />
