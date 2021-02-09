@@ -892,6 +892,11 @@
   resolved "https://registry.yarnpkg.com/@types/warning/-/warning-3.0.0.tgz#0d2501268ad8f9962b740d387c4654f5f8e23e52"
   integrity sha1-DSUBJorY+ZYrdA04fEZU9fjiPlI=
 
+"@types/yt-search@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@types/yt-search/-/yt-search-2.3.0.tgz#9f8764ee391d0e0ef000149463d853e3e5ec1220"
+  integrity sha512-B0F8mn14F4nHWG5HJ0WUMhsiDqOPD/bHbPd0pEaj/+qZgmLV/Wmy7yo0xSKPRD9D3R/DUywqIhFFAPUMaYqi3Q==
+
 "@videojs/vhs-utils@^3.0.0":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@videojs/vhs-utils/-/vhs-utils-3.0.0.tgz#998fda2a7519218a30759385d2048b1cd30eba36"
@@ -900,6 +905,11 @@
     "@babel/runtime" "^7.12.5"
     global "^4.4.0"
     url-toolkit "^2.2.1"
+
+"@yimura/scraper@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@yimura/scraper/-/scraper-0.2.3.tgz#6ad294905abdcb6ff7cb361f0090c5bf26dce049"
+  integrity sha512-Pl99D9YkuwnOeQkt6dht71rI95L1D7Eb/Fi/5lmhYpelrR6Snfm8sI28A7Xb7FtWVLRStDKljeCECe/nKcCyzw==
 
 abort-controller@3.0.0:
   version "3.0.0"
@@ -1758,6 +1768,11 @@ fs-constants@^1.0.0:
   resolved "https://registry.yarnpkg.com/fs-constants/-/fs-constants-1.0.0.tgz#6be0de9be998ce16af8afc24497b9ee9b7ccd9ad"
   integrity sha512-y6OAwoSIf7FyjMIv94u+b5rdheZEjzR63GTyZJm5qh4Bi+2YgwLCcI/fPFZkL5PSixOt6ZNKm+w+Hfp/Bciwow==
 
+fs@^0.0.1-security:
+  version "0.0.1-security"
+  resolved "https://registry.yarnpkg.com/fs/-/fs-0.0.1-security.tgz#8a7bd37186b6dddf3813f23858b57ecaaf5e41d4"
+  integrity sha1-invTcYa23d84E/I4WLV+yq9eQdQ=
+
 fsevents@~2.3.1:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.2.tgz#8a526f78b8fdf4623b709e0b975c52c24c02fd1a"
@@ -1962,11 +1977,6 @@ invariant@^2.2.4:
   integrity sha512-phJfQVBuaJM5raOpJjSfkiD6BpbCE4Ns//LaXl6wGYtUBY83nWS6Rf9tXm2e8VaK60JEjYldbPif/A2B1C2gNA==
   dependencies:
     loose-envify "^1.0.0"
-
-iptv-playlist-parser@^0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/iptv-playlist-parser/-/iptv-playlist-parser-0.6.0.tgz#7b59a2747b84114a09bc66fc4b5f053294a490a9"
-  integrity sha512-dcqN5SaL+PCepJrFoT/ZAA3uHoyLVdomXQmSPCzcT700sUoCYORoVD0d/vIJFMRAlCU/uXCtVAJH17RRWTqmwQ==
 
 is-arrayish@^0.2.1:
   version "0.2.1"
