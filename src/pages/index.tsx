@@ -74,13 +74,9 @@ export default function Home() {
 
     setLoading(true);
 
-    setLoading(false);
-
-
-    // setSearchList(r.videos.slice(0, 3));
-    // setTimeout(() => {
-
-    // }, 2000);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
   }
 
 
